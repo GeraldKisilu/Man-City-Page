@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes instead of Switch
+import FirstPage from './Components/FirstPage'; // Adjust path accordingly
+import Cards from './Components/Cards'; // Adjust path accordingly
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Routes> 
+                <Route exact path="/" element={<FirstPage />} /> 
+                <Route path="/cards" element={<Cards />} /> 
+            </Routes> 
+        </Router>
+    );
 }
 
 export default App;

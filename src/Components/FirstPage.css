@@ -1,0 +1,16 @@
+#content-Button {
+    display:block;
+    background-color: rgba(53, 136, 245, 0.37);
+    cursor: pointer;
+    margin-left: 43%;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+#content-Button:hover{
+    background-color: rgba(255, 255, 255, 0.822);
+    box-shadow: 4px 4px 6px rgba(94, 133, 218, 0.795);
+}
