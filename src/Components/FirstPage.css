@@ -14,3 +14,49 @@
     background-color: rgba(255, 255, 255, 0.822);
     box-shadow: 4px 4px 6px rgba(94, 133, 218, 0.795);
 }
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.welcome-container {
+    animation: fadeOut 30s forwards; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(207, 216, 216, 0.9);
+    border: 2px solid rgb(25, 116, 190); 
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 4px 4px 6px rgba(94, 133, 218, 0.795);
+}
+
+.blinking-hand {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    animation: blink 1s infinite;
+    margin-left: -8.8%;
+}
