@@ -1,22 +1,64 @@
 .deck {
-    background-image: url("Assets/Aguero.jpg");
+    background-image: url("Assets/man-city-field.jpg");
     position: absolute;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    
 }
 
 .card {
     background-color: rgba(255, 255, 255, 0.144);
-    border: 3px solid #443685;
-    border-radius: 5px ;
+    border: 3px solid #1ba7df;
+    border-radius: 0.5rem ;
     margin: 10px;
     display: inline-block;
-    font-size: 18px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.795);
+}
+.card:hover {
+    background-color: #1ba7df;
     box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.795);
+}
 
+.card-img-top {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; 
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 h1{
     font-style: italic;
     font-weight: 20%;
+    color: white;
+    text-decoration: underline;
 }
 
 @keyframes fadeIn {
@@ -30,63 +72,64 @@ h1{
     }
 }
 .animate-0 {
-    animation: fadeIn 1.5s ease 0.1s forwards;
+    animation: fadeIn 0.5s ease 0.1s forwards;
 }
-
 .animate-1 {
-    animation: fadeIn 1.5s ease 1.1s forwards;
+    animation: fadeIn 0.5s ease 0.2s forwards;
 }
-
 .animate-2 {
-    animation: fadeIn 1.5s ease 2.1s forwards;
+    animation: fadeIn 0.5s ease 0.3s forwards;
 }
-
 .animate-3 {
-    animation: fadeIn 1.5s ease 3.1s forwards;
+    animation: fadeIn 0.5s ease 0.4s forwards;
 }
-
 .animate-4 {
-    animation: fadeIn 1.0s ease 4.1s forwards;
+    animation: fadeIn 0.5s ease 0.5s forwards;
 }
-
 .animate-5 {
-    animation: fadeIn 1.0s ease 5.1s forwards;
+    animation: fadeIn 0.5s ease 0.6s forwards;
 }
-
 .animate-6 {
-    animation: fadeIn 1.0s ease 6.1s forwards;
+    animation: fadeIn 0.5s ease 0.7s forwards;
 }
-
 .animate-7 {
-    animation: fadeIn 1.0s ease 7.1s forwards;
+    animation: fadeIn 0.5s ease 0.8s forwards;
 }
-
 .animate-8 {
-    animation: fadeIn 1.0s ease 8.1s forwards;
+    animation: fadeIn 0.5s ease 0.9s forwards;
 }
-
 .animate-9 {
-    animation: fadeIn 1.0s ease 9.1s forwards;
+    animation: fadeIn 0.5s ease 1.0s forwards;
 }
-
 .animate-10 {
-    animation: fadeIn 1.0s ease 10.1s forwards;
+    animation: fadeIn 0.5s ease 1.1s forwards;
 }
-
 .animate-11 {
-    animation: fadeIn 1.0s ease 11.1s forwards;
+    animation: fadeIn 0.5s ease 1.2s forwards;
 }
-
 .animate-12 {
-    animation: fadeIn 1.0s ease 12.1s forwards;
+    animation: fadeIn 0.5s ease 1.3s forwards;
 }
-
 .animate-13 {
-    animation: fadeIn 1.0s ease 13.1s forwards;
+    animation: fadeIn 0.5s ease 1.4s forwards;
 }
-
 .animate-14 {
-    animation: fadeIn 1.0s ease 14.1s forwards;
+    animation: fadeIn 0.5s ease 1.5s forwards;
+}
+.animate-15 {
+    animation: fadeIn 0.5s ease 1.6s forwards;
+}
+.animate-16 {
+    animation: fadeIn 0.5s ease 1.7s forwards;
+}
+.animate-17 {
+    animation: fadeIn 0.5s ease 1.8s forwards;
+}
+.animate-18 {
+    animation: fadeIn 0.5s ease 1.9s forwards;
+}
+.animate-19 {
+    animation: fadeIn 0.5s ease 2.0s forwards;
 }
 #nxtButton{
     float: right;
