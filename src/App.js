@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FirstPage from './Components/FirstPage';
 import Cards from './Components/Cards';
+import Review from './Components/Review';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,9 +33,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<FirstPage />} />
         <Route path="/cards" element={<Cards players={players} />} />
+        <Route path="/review/:playerName" element={<Review />} />
       </Routes>
     </Router>
-    
   );
 }
 

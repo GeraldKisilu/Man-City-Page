@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Cards.css';
 import GuardiolImage from './Assets/Guardiol.jpg';
 import HaalandImage from './Assets/Haaland.jpg';
@@ -23,6 +24,7 @@ import AkanjiImage from './Assets/Akanji.jpg';
 
 function Cards({ players }) {
     const cardRefs = useRef([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         cardRefs.current.forEach((cardRef, index) => {
@@ -68,14 +70,13 @@ function Cards({ players }) {
                     style={{ width: '18rem', opacity: 0 }}
                 >
                     <img
-                        src={imageMapping[player.name] || '/default.jpg'} // Fallback to a default image
+                        src={imageMapping[player.name] || '/default.jpg'} 
                         className="card-img-top"
                         alt={player.name}
                     />
                     <div className="card-body">
                         <h5 className="card-title">{player.name}</h5>
-                        
-                        <button>Rate</button>
+                        <button onClick={() => navigate(`/review/${player.name}`)}>Review</button>
                         <p>⭐</p>
                     </div>
                 </div>
